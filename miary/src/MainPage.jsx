@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./styl.css";
 
+// ******************************************
+// pola: [wartosc, setWartosc] - przechowuje wartosc liczbowa, ktora ma za zadanie przechowywac wartosc z inputa
+//      [miara, setMiara] - przechowuje wartosc liczbowa, ktora ma za zadanie przechowywac wybor z select
+//      [wynik, setWynik] - przechowuje wartosc liczbowa, ktora ma za zadanie przechowywac wynik dzialania z funkji useEffect
+//      tab - jest to tablica ktora przechowuje ciagi znakow ktore opisuja zamiany jednostek miar
+//      [lista, setLista] - przechouwje tablice ktora przechowuje zmienne wartosc, miara, wynik, tab
+// ******************************************
+
+
 function MainPage(){
     const [wartosc, setWartosc] = useState(0);
     const [miara, setMiara] = useState();
